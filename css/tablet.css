@@ -1,0 +1,92 @@
+header {
+  height: 450px;
+}
+
+header img {
+  margin-top: 0;
+  width: 200px;
+}
+
+header .header__container h1 {
+  font-size: 40px;
+  line-height: 42px;
+}
+
+header .header__container p {
+  margin-top: 42px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+header .header__button {
+  top: 392px;
+}
+
+main .mainContainer__title h2 {
+  margin: 0 12px 24px;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+main .mainContainer__title p {
+  margin: 0 12px 48px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+main .tablesContainer {
+  width: 930px;
+}
+
+main .product-detail__title h2 {
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+main .product-detail__title p {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+main .product-cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 930px;
+}
+
+main .bitcoin-img-container {
+  height: 50vh;
+  background-image: url(../images/bitcoinbaby_2.png);
+}
+
+main .bitcoin-img-container h2 {
+  padding-top: 85px;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+main .plans-container__slider {
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+main .plans__title h2 {
+  margin: 80px auto 24px;
+}
+
+main .plans__title p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+main .plans-container__card {
+  margin: 64px 0 0;
+}
+
+footer .left ul {
+  font-size: 20px;
+}

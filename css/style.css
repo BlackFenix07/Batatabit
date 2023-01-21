@@ -1,0 +1,567 @@
+:root {
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --soft-blue: #e7f5ff;
+  --secundary-blue: #1a9af7;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --just-white: #ffffff;
+  --off-white: #faf8f7;
+  --grey: #bababa;
+  --grey: #757575;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+header img {
+  margin-top: 60px;
+  width: 150px;
+  height: 24px;
+  align-self: center;
+}
+
+header .header__container {
+  margin-top: 40px;
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  align-self: center;
+  text-align: center;
+}
+
+header .header__container h1 {
+  margin: 0 auto;
+  max-width: 488px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--just-white);
+}
+
+header .header__container p {
+  margin: 0 auto;
+  margin-top: 25px;
+  max-width: 382px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--soft-orange);
+}
+
+header .header__button {
+  position: absolute;
+  top: 270px;
+  left: calc(50% - 118px);
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  background: var(--off-white);
+  color: var(--black);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+header .header__button span {
+  display: inline-block;
+  margin-left: 10px;
+  width: 13px;
+  height: 8px;
+  background-image: url("../icons/down_arrow.svg");
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background: var(--off-white);
+}
+
+main .mainContainer {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+main .backgroundImg {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/bitcoin.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .mainContainer__title {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 486px;
+}
+
+main .mainContainer__title h2 {
+  margin: 0 12px 30px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--black);
+}
+
+main .mainContainer__title p {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+/* INICIO DE LAS TABLAS */
+main .tablesContainer {
+  display: flex;
+  margin: 48px auto;
+  overflow-x: auto;
+}
+
+main .tables {
+  margin: 0 auto;
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  font-family: "Inter", sans-serif;
+}
+
+main .ml-s {
+  margin-left: calc(50% - 115px);
+}
+
+main .tables__title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+main .bitcoin-orange {
+  color: var(--bitcoin-orange);
+}
+
+main .tables__container {
+  margin: 0 auto;
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+}
+
+main .tables__container table {
+  width: 100%;
+  height: 100%;
+}
+
+main .tables__container td {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  background: var(--just-white);
+  color: var(--grey);
+}
+
+main .table__top-left {
+  border-radius: 15px 0 0 0;
+}
+
+main .table__top-right {
+  border-radius: 0 15px 0 0;
+}
+
+main .table__bottom-left {
+  border-radius: 0 0 0 15px;
+}
+
+main .table__bottom-right {
+  border-radius: 0 0 15px 0;
+}
+
+main .table__right {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+  color: #757575;
+}
+
+main .down {
+  display: inline-block;
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../icons/trending_down.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .up {
+  display: inline-block;
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../icons/trending_up.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .tables__date {
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  width: 190px;
+  height: 30px;
+  background: var(--soft-orange);
+  border-radius: 8px;
+}
+
+main .tables__date p {
+  font-size: 12px;
+  font-weight: 300px;
+  line-height: 15px;
+  color: var(--warm-black);
+}
+
+main .mr-s {
+  margin-right: calc(50% - 115px);
+}
+
+main .secundary-blue {
+  color: var(--secundary-blue);
+}
+
+main .commisions-table__date {
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  width: 190px;
+  height: 30px;
+  background: var(--soft-blue);
+  border-radius: 8px;
+}
+
+main .commisions-table__date p {
+  font-size: 12px;
+  font-weight: 300px;
+  line-height: 15px;
+  color: var(--warm-black);
+} /* FIN DE LAS TABLAS */
+
+main .main-product-detail {
+  position: relative;
+  margin-top: 44px;
+  padding-top: 64px;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background: var(--warm-black);
+}
+
+main .product-detail__title {
+  margin: 0 auto;
+  width: 90%;
+  min-width: 288px;
+  max-width: 466px;
+  height: auto;
+  text-align: center;
+}
+
+main .product-detail__title h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--just-white);
+}
+
+main .product-detail__title p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #808080;
+}
+
+main .product-detail__card {
+  margin: 15px auto;
+  padding: 15px;
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  background: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+main .clock {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../icons/clock.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .product__card-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--just-white);
+}
+
+main .product__card-body {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #808080;
+}
+
+main .eye {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../icons/eye.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .dollar {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../icons/dollar_sign.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .check_circle {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../icons/check_circle.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .bitcoin-img-container {
+  margin-top: 60px;
+  width: 100%;
+  min-width: 320px;
+  height: 67vh;
+  background-image: url(../images/bitcoinbaby.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: var(--just-white);
+}
+
+main .main-plans-container {
+  padding-bottom: 70px;
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
+  background: var(--off-white);
+}
+
+main .plans__title {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+}
+
+main .plans__title h2 {
+  margin: 82px auto 24px;
+  max-width: 466px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  color: var(--black);
+}
+
+main .plans__title p {
+  margin: auto;
+  padding-top: 30px;
+  max-width: 466px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--grey);
+}
+
+main .plans-container__slider {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin: 48px auto;
+}
+
+main .plans-container__card {
+  position: relative;
+  margin: 0px auto;
+  padding: 0 15px;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  background: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+main .recommended {
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 60px);
+  padding: 6px;
+  width: 120px;
+  height: 31px;
+  font-size: 12px;
+  background: var(--bitcoin-orange);
+  color: var(--just-white);
+  border-radius: 8px;
+}
+
+main .plan-card__title {
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--black);
+}
+
+main .plan-card__price {
+  position: relative;
+  padding: 5px;
+  font-size: 52px;
+  font-weight: 700;
+  color: black;
+}
+
+main .plan-card__price span {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 50px);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+main .plan-card__saving {
+  margin: auto;
+  max-width: 86%;
+  font-size: 12px;
+  color: var(--grey);
+}
+
+main .plan-card__ca {
+  margin-top: 20px;
+  width: 150px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  line-height: 18px;
+  background: var(--off-white);
+  color: var(--black);
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main .plan-card__ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../icons/arrow_right.svg);
+  vertical-align: text-bottom;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background: var(--bitcoin-orange);
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+footer .left ul {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  list-style: none;
+}
+
+footer .left li {
+  margin: 10px 0;
+}
+
+footer .left a {
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+@media screen and (min-width: 475px) {
+  .tablesContainer>div {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
